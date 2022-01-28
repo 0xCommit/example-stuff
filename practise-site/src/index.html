@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="scripts/web3.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>Web3 Practise Site</title>
+</head>
+
+<body>
+
+    <!-- Top navigation bar to go to different sections of the website -->
+    <!-- Styled in styles.css -->
+    <div class="topnav">
+        <a class="active" href="#home">ERC20 - COOL Token</a>
+        <a href="test.html">ERC721 - BEAST NFTs</a>
+    </div>
+
+    <!-- Info of the user -->
+    <div class="box">
+        <p id="infoAddress">Your address: </p>
+        <p id="infoBalance">Your balance: </p>
+        <p id="infoTokenBalance">Token balance: </p>
+    </div>
+
+    <!-- Check balance of address -->
+    <div class="box" id="checkBalanceBox">
+        <p><b>Check balance of address</b></p>
+        <input type="text" id="checkBalanceTextInput" placeholder="Enter ETH address">
+        <input type="button" id="checkBalanceButtonInput" value="Check">
+        <p id="checkedBalanceEthLabel">Balance: </p>
+        <p id="checkedBalanceTokenLabel">Token balance: </p>
+    </div>
+
+    <!-- Transfer tokens -->
+    <div class="box" id="transferBox">
+        <p><b>Transfer tokens</b></p>
+        <input type="text" id="transferAddressTextInput" placeholder="Enter ETH address">
+        <input type="button" id="transferButtonInput" value="Transfer">
+        <input type="number" id="transferAmountTextInput" placeholder="Amount COOL">
+    </div>
+
+    <!-- Mint tokens -->
+    <div class="box" id="mintBox">
+        <p><b>Mint tokens</b></p>
+        <input type="button" id="mintButtonInput" value="Mint">
+        <p id="mintTokensLabel">Tokens minted: </p>
+    </div>
+
+</body>
+
+</html>
