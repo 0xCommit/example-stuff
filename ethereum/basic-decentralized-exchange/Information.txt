@@ -1,0 +1,16 @@
+Created an Exchange smart contract "./contracts/Exchange.sol" which contains the logic for a basic decentralized exchange.
+
+Users can deposit Ether and other ERC-20 tokens on to the Exchange smart contract, and can create orders using the createOrder function which creates an Order struct,
+stored in the public mapping(uint=>Order) maps.
+
+Other users can execute against those orders and complete a trade. The smart contract will update each users balance and execute the trade. 
+
+Users can then withdraw their funds from the Exchange smart contract.
+
+
+Some tests were created in "./test/Exchange.test.js", but that is not complete.
+
+A front-end was never made, however the functions were implemented in C# using Nethereum, and from there could have created a Windows C# front-end for this dex, but didn't finish that.
+  - The files for this are in the NethereumTest folder.
+
+This showed the basics of how a decentralized exchange would work (the older types, at least, like EtherDelta), and how to implement it.
